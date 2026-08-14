@@ -1,0 +1,1126 @@
+{
+ "generated_from": "data/clean/butula_stations_with_coords.csv (real IEBC data, no synthetic figures)",
+ "voters_per_canvasser": 150,
+ "wards": [
+  "Elugulu",
+  "Kingandole",
+  "Marachi Central",
+  "Marachi East",
+  "Marachi North",
+  "Marachi West"
+ ],
+ "stations": [
+  {
+   "code": "040229114707801",
+   "name": "Bukhuma Dispensary",
+   "ward": "Elugulu",
+   "registered_voters": 599,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114707201",
+   "name": "Bukhuma Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 592,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114707202",
+   "name": "Bukhuma Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 591,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114707101",
+   "name": "Bulwani Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 518,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114707102",
+   "name": "Bulwani Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 517,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114707301",
+   "name": "Bwaliro Primary Schol",
+   "ward": "Elugulu",
+   "registered_voters": 477,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114707302",
+   "name": "Bwaliro Primary Schol",
+   "ward": "Elugulu",
+   "registered_voters": 477,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114706801",
+   "name": "Elugulu Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 576,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114706802",
+   "name": "Elugulu Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 575,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114707701",
+   "name": "Elugulu Trading Centre",
+   "ward": "Elugulu",
+   "registered_voters": 627,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114707702",
+   "name": "Elugulu Trading Centre",
+   "ward": "Elugulu",
+   "registered_voters": 627,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114707601",
+   "name": "Enakaywa Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 358,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114707602",
+   "name": "Enakaywa Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 358,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114706901",
+   "name": "Esibembe Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 392,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114706902",
+   "name": "Esibembe Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 392,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114707501",
+   "name": "Madola Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 629,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114707901",
+   "name": "Makutano Trading Centre",
+   "ward": "Elugulu",
+   "registered_voters": 265,
+   "target_agents": 1,
+   "target_canvassers": 2
+  },
+  {
+   "code": "040229114707401",
+   "name": "Mung'Ambwa Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 391,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114707402",
+   "name": "Mung'Ambwa Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 391,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114707001",
+   "name": "Sikura Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 409,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114707002",
+   "name": "Sikura Primary School",
+   "ward": "Elugulu",
+   "registered_voters": 408,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114302401",
+   "name": "Busibi Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 310,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114302201",
+   "name": "Busike Nursery School",
+   "ward": "Kingandole",
+   "registered_voters": 179,
+   "target_agents": 1,
+   "target_canvassers": 2
+  },
+  {
+   "code": "040229114301601",
+   "name": "Butunyi Mixed Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 625,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114302001",
+   "name": "Dadira Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 429,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114302002",
+   "name": "Dadira Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 428,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114301801",
+   "name": "Ikonzo Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 622,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114301802",
+   "name": "Ikonzo Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 622,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114301501",
+   "name": "Kingandole Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 512,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114301502",
+   "name": "Kingandole Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 512,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114301503",
+   "name": "Kingandole Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 512,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114302101",
+   "name": "Murumba Market",
+   "ward": "Kingandole",
+   "registered_voters": 622,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114302102",
+   "name": "Murumba Market",
+   "ward": "Kingandole",
+   "registered_voters": 622,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114301701",
+   "name": "Musoma Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 562,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114301702",
+   "name": "Musoma Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 561,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114301901",
+   "name": "Namwitsula Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 658,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114301902",
+   "name": "Namwitsula Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 657,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114302301",
+   "name": "Nyalwanda Primary School",
+   "ward": "Kingandole",
+   "registered_voters": 585,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114308101",
+   "name": "Simoni Ack Church",
+   "ward": "Kingandole",
+   "registered_voters": 324,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114302501",
+   "name": "Sirikhaya Secondary School",
+   "ward": "Kingandole",
+   "registered_voters": 406,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "OL 040229114308201",
+   "name": "St.Stephen'S Bumutiru Ac Primary S",
+   "ward": "Kingandole",
+   "registered_voters": 0,
+   "target_agents": 1,
+   "target_canvassers": 1
+  },
+  {
+   "code": "040229114403701",
+   "name": "Bar Ober Trading Centre",
+   "ward": "Marachi Central",
+   "registered_voters": 277,
+   "target_agents": 1,
+   "target_canvassers": 2
+  },
+  {
+   "code": "040229114402601",
+   "name": "Bukhalalire Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 601,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114402602",
+   "name": "Bukhalalire Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 601,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114402603",
+   "name": "Bukhalalire Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 600,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114403301",
+   "name": "Bumutiru Rc Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 370,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403302",
+   "name": "Bumutiru Rc Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 370,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114402801",
+   "name": "Busiada Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 413,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114402802",
+   "name": "Busiada Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 412,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403101",
+   "name": "Elunyiko Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 417,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403102",
+   "name": "Elunyiko Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 416,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403401",
+   "name": "Emagombe Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 383,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403402",
+   "name": "Emagombe Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 383,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114402901",
+   "name": "Esikoma Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 613,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114402902",
+   "name": "Esikoma Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 613,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114402701",
+   "name": "Igula Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 418,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114402702",
+   "name": "Igula Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 417,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403001",
+   "name": "Khunyangu Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 679,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114403002",
+   "name": "Khunyangu Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 678,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114403201",
+   "name": "Nelaa Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 418,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403202",
+   "name": "Nelaa Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 417,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403601",
+   "name": "Saka Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 635,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114403501",
+   "name": "Simuli Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 423,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403502",
+   "name": "Simuli Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 422,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403801",
+   "name": "St.Augustine Boys Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 355,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114403802",
+   "name": "St.Augustine Boys Primary School",
+   "ward": "Marachi Central",
+   "registered_voters": 354,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114504201",
+   "name": "Buduma Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 447,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114504202",
+   "name": "Buduma Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 446,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114504801",
+   "name": "Buhuyi Market",
+   "ward": "Marachi East",
+   "registered_voters": 394,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114504802",
+   "name": "Buhuyi Market",
+   "ward": "Marachi East",
+   "registered_voters": 394,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114504001",
+   "name": "Buhuyi Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 475,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114504002",
+   "name": "Buhuyi Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 474,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114504003",
+   "name": "Buhuyi Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 474,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114504301",
+   "name": "Bumala R.C Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 497,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114504302",
+   "name": "Bumala R.C Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 497,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114505001",
+   "name": "Bumala'B' Health Centre",
+   "ward": "Marachi East",
+   "registered_voters": 193,
+   "target_agents": 1,
+   "target_canvassers": 2
+  },
+  {
+   "code": "040229114504901",
+   "name": "Emafubu Health Centre",
+   "ward": "Marachi East",
+   "registered_voters": 599,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114504401",
+   "name": "Emakwara Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 355,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114504402",
+   "name": "Emakwara Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 355,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114504601",
+   "name": "Enango Trading Centre",
+   "ward": "Marachi East",
+   "registered_voters": 372,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114504501",
+   "name": "Isongo Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 680,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114504502",
+   "name": "Isongo Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 680,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114503901",
+   "name": "Mauko Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 564,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114503902",
+   "name": "Mauko Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 563,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114505101",
+   "name": "Musibiriri Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 618,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114504101",
+   "name": "Siribo Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 571,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114504102",
+   "name": "Siribo Primary School",
+   "ward": "Marachi East",
+   "registered_voters": 571,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114504701",
+   "name": "Siribo Trading Centre",
+   "ward": "Marachi East",
+   "registered_voters": 443,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114504702",
+   "name": "Siribo Trading Centre",
+   "ward": "Marachi East",
+   "registered_voters": 443,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114606601",
+   "name": "Benga Technical Institute",
+   "ward": "Marachi North",
+   "registered_voters": 366,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114606602",
+   "name": "Benga Technical Institute",
+   "ward": "Marachi North",
+   "registered_voters": 366,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114605701",
+   "name": "Bukati Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 687,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114605702",
+   "name": "Bukati Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 687,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114605501",
+   "name": "Butula Boys Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 493,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114605502",
+   "name": "Butula Boys Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 493,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114605503",
+   "name": "Butula Boys Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 493,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114606501",
+   "name": "Butula Girls Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 504,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114606502",
+   "name": "Butula Girls Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 503,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114606701",
+   "name": "Butula Market",
+   "ward": "Marachi North",
+   "registered_voters": 623,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114605601",
+   "name": "Elukhari Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 556,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114606201",
+   "name": "Elukhari Secondary School",
+   "ward": "Marachi North",
+   "registered_voters": 625,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114606001",
+   "name": "Esiunga Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 511,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114606401",
+   "name": "Kalalani Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 334,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114605801",
+   "name": "Kanjala Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 625,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114605802",
+   "name": "Kanjala Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 624,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114606101",
+   "name": "Masendebale Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 485,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114606102",
+   "name": "Masendebale Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 485,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114605301",
+   "name": "Mung'Abo Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 363,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114605302",
+   "name": "Mung'Abo Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 362,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114605401",
+   "name": "Sibina Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 550,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114605901",
+   "name": "Sikarira Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 383,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114605902",
+   "name": "Sikarira Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 382,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114605201",
+   "name": "Tingolo Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 501,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114605202",
+   "name": "Tingolo Primary School",
+   "ward": "Marachi North",
+   "registered_voters": 501,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114606301",
+   "name": "Tingolo Secondary School",
+   "ward": "Marachi North",
+   "registered_voters": 435,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114200201",
+   "name": "Bujumba Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 580,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114200202",
+   "name": "Bujumba Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 580,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114200203",
+   "name": "Bujumba Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 580,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114200701",
+   "name": "Bukhakhala Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 528,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114200801",
+   "name": "Bukhwaku Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 594,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114201301",
+   "name": "Bumala 'A' Machanization Centre",
+   "ward": "Marachi West",
+   "registered_voters": 274,
+   "target_agents": 1,
+   "target_canvassers": 2
+  },
+  {
+   "code": "040229114200501",
+   "name": "Bumala 'A' Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 468,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114200502",
+   "name": "Bumala 'A' Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 468,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114200503",
+   "name": "Bumala 'A' Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 467,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114201401",
+   "name": "Bumala Township",
+   "ward": "Marachi West",
+   "registered_voters": 497,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114201402",
+   "name": "Bumala Township",
+   "ward": "Marachi West",
+   "registered_voters": 496,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114201403",
+   "name": "Bumala Township",
+   "ward": "Marachi West",
+   "registered_voters": 496,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114201101",
+   "name": "Burinda Health Centre",
+   "ward": "Marachi West",
+   "registered_voters": 341,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114200901",
+   "name": "Burinda Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 639,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114200301",
+   "name": "Buriya Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 593,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114201001",
+   "name": "Busibula Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 273,
+   "target_agents": 1,
+   "target_canvassers": 2
+  },
+  {
+   "code": "040229114200101",
+   "name": "Busire Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 652,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114200102",
+   "name": "Busire Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 651,
+   "target_agents": 1,
+   "target_canvassers": 5
+  },
+  {
+   "code": "040229114200601",
+   "name": "Masebula Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 541,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114200602",
+   "name": "Masebula Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 540,
+   "target_agents": 1,
+   "target_canvassers": 4
+  },
+  {
+   "code": "040229114208001",
+   "name": "Nango Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 314,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114200401",
+   "name": "Nyamwanga Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 363,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114200402",
+   "name": "Nyamwanga Primary School",
+   "ward": "Marachi West",
+   "registered_voters": 362,
+   "target_agents": 1,
+   "target_canvassers": 3
+  },
+  {
+   "code": "040229114201201",
+   "name": "Ogongo Nursery School",
+   "ward": "Marachi West",
+   "registered_voters": 278,
+   "target_agents": 1,
+   "target_canvassers": 2
+  }
+ ]
+}

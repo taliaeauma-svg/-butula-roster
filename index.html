@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Butula Campaign — Roles &amp; Coverage Tracker</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header id="app-header">
+    <div class="header-title">
+      <h1>Butula Campaign &mdash; Roles &amp; Coverage Tracker</h1>
+      <p class="subtitle">139 stations, 6 wards &middot; real IEBC registered-voter data, no turnout figures needed</p>
+    </div>
+    <p id="sync-status" class="hint">Loading...</p>
+  </header>
+
+  <main class="page">
+
+    <section class="panel" id="coverage-summary">
+      <h2>Coverage at a glance</h2>
+      <div class="stat-row">
+        <div class="stat-tile"><div class="value" id="stat-coordinators">0/6</div><div class="label">Ward coordinators</div></div>
+        <div class="stat-tile"><div class="value" id="stat-agents">0/139</div><div class="label">Polling agents</div></div>
+        <div class="stat-tile"><div class="value" id="stat-canvassers">0/0</div><div class="label">Canvassers (of target)</div></div>
+        <div class="stat-tile status-full"><div class="value" id="stat-full">0</div><div class="label">Fully staffed stations</div></div>
+        <div class="stat-tile status-partial"><div class="value" id="stat-partial">0</div><div class="label">Partially staffed</div></div>
+        <div class="stat-tile status-none"><div class="value" id="stat-unstaffed">139</div><div class="label">Unstaffed</div></div>
+      </div>
+    </section>
+
+    <section class="panel" id="form-panel">
+      <h2 id="form-heading">Add an assignment</h2>
+      <form id="assignment-form">
+        <input type="hidden" id="f-id" />
+        <div class="form-grid">
+          <label>Name<input type="text" id="f-name" required /></label>
+          <label>Phone<input type="tel" id="f-phone" /></label>
+          <label>Role
+            <select id="f-role" required>
+              <option value="Ward Coordinator">Ward Coordinator</option>
+              <option value="Polling Agent">Polling Agent</option>
+              <option value="Canvasser" selected>Canvasser</option>
+            </select>
+          </label>
+          <label>Ward
+            <select id="f-ward" required></select>
+          </label>
+          <label id="f-station-label">Station
+            <select id="f-station"></select>
+          </label>
+          <label>Status
+            <select id="f-status">
+              <option value="Assigned" selected>Assigned</option>
+              <option value="Confirmed">Confirmed</option>
+              <option value="Dropped">Dropped</option>
+            </select>
+          </label>
+          <label class="notes-field">Notes<input type="text" id="f-notes" placeholder="optional" /></label>
+        </div>
+        <div class="form-actions">
+          <button type="submit" id="f-submit">Add assignment</button>
+          <button type="button" id="f-cancel" class="secondary" hidden>Cancel edit</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel" id="io-panel">
+      <h2>Backup &amp; sync</h2>
+      <p class="hint">This roster is shared &mdash; everyone who opens this page sees the same data, refreshed
+        automatically every 15 seconds. Export a CSV any time as an offline backup; import a CSV to bulk-add or
+        bulk-update rows (matched by row, newest edit wins).</p>
+      <div class="form-actions">
+        <button type="button" id="btn-export">Export CSV</button>
+        <button type="button" id="btn-import">Import CSV</button>
+        <input type="file" id="file-import" accept=".csv" hidden />
+      </div>
+    </section>
+
+    <section class="panel" id="table-panel">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="roster">Roster</button>
+        <button class="tab-btn" data-tab="coverage">Station coverage</button>
+      </div>
+
+      <div id="tab-roster" class="tab-content">
+        <div class="filter-bar">
+          <input type="search" id="filter-search" placeholder="Search name or phone..." />
+          <select id="filter-role">
+            <option value="">All roles</option>
+            <option value="Ward Coordinator">Ward Coordinator</option>
+            <option value="Polling Agent">Polling Agent</option>
+            <option value="Canvasser">Canvasser</option>
+          </select>
+          <select id="filter-ward"><option value="">All wards</option></select>
+          <select id="filter-status">
+            <option value="">All statuses</option>
+            <option value="Assigned">Assigned</option>
+            <option value="Confirmed">Confirmed</option>
+            <option value="Dropped">Dropped</option>
+          </select>
+        </div>
+        <table id="roster-table">
+          <thead>
+            <tr>
+              <th>Name</th><th>Phone</th><th>Role</th><th>Ward</th><th>Station</th>
+              <th>Status</th><th>Notes</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="roster-tbody"></tbody>
+        </table>
+        <p class="empty-note" id="roster-empty" hidden>No volunteers match these filters yet.</p>
+      </div>
+
+      <div id="tab-coverage" class="tab-content" hidden>
+        <div class="filter-bar">
+          <select id="coverage-filter-ward"><option value="">All wards</option></select>
+          <select id="coverage-filter-status">
+            <option value="">All coverage statuses</option>
+            <option value="Fully staffed">Fully staffed</option>
+            <option value="Partial">Partial</option>
+            <option value="Unstaffed">Unstaffed</option>
+          </select>
+        </div>
+        <table id="coverage-table">
+          <thead>
+            <tr>
+              <th>Station</th><th>Ward</th><th class="num">Reg. voters</th>
+              <th class="num">Agent</th><th class="num">Canvassers</th><th>Coverage</th>
+            </tr>
+          </thead>
+          <tbody id="coverage-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
