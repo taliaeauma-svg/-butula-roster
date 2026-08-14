@@ -1,5 +1,6 @@
 const API_URL = "/api/roster";
 const POLL_INTERVAL_MS = 15000;
+const ACCESS_KEY_STORAGE = "butula_roster_access_key";
 
 let SEED = { wards: [], stations: [] };
 let STATIONS_BY_CODE = {};
@@ -21,30 +22,60 @@ function setSyncStatus(text, isError) {
   el.classList.toggle("sync-error", !!isError);
 }
 
-async function apiFetchAll() {
-  const res = await fetch(API_URL);
-  if (!res.ok) throw new Error(`GET ${API_URL} failed: ${res.status}`);
+function getAccessKey() {
+  return localStorage.getItem(ACCESS_KEY_STORAGE) || "";
+}
+
+function authHeaders() {
+  const key = getAccessKey();
+  return key ? { "x-roster-key": key } : {};
+}
+
+// If the server rejects the current key (or there isn't one yet), prompt once
+// and retry. Coordinators get the shared code out of band (e.g. WhatsApp), not
+// from anything in this codebase.
+async function apiRequest(method, body, { interactive = true } = {}) {
+  const doFetch = () =>
+    fetch(API_URL, {
+      method,
+      headers: { "content-type": "application/json", ...authHeaders() },
+      body: body !== undefined ? JSON.stringify(body) : undefined,
+    });
+
+  let res = await doFetch();
+  // Only prompt for the interactive case (a user clicked something). The
+  // background poll passes interactive:false so a missing/wrong key doesn't
+  // pop a confirm dialog every 15 seconds.
+  if (res.status === 401 && interactive) {
+    const key = prompt("This roster requires an access code. Enter it:");
+    if (key) {
+      localStorage.setItem(ACCESS_KEY_STORAGE, key.trim());
+      res = await doFetch();
+    }
+  }
+  if (!res.ok) {
+    let message = `${method} ${API_URL} failed: ${res.status}`;
+    try {
+      const errBody = await res.json();
+      if (errBody && errBody.error) message = errBody.error;
+    } catch {
+      /* response wasn't JSON, keep the generic message */
+    }
+    throw new Error(message);
+  }
   return res.json();
 }
 
-async function apiPut(record) {
-  const res = await fetch(API_URL, {
-    method: "PUT",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify(record),
-  });
-  if (!res.ok) throw new Error(`PUT ${API_URL} failed: ${res.status}`);
-  return res.json();
+function apiFetchAll(opts) {
+  return apiRequest("GET", undefined, opts);
 }
 
-async function apiDelete(id) {
-  const res = await fetch(API_URL, {
-    method: "DELETE",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify({ id }),
-  });
-  if (!res.ok) throw new Error(`DELETE ${API_URL} failed: ${res.status}`);
-  return res.json();
+function apiPut(record) {
+  return apiRequest("PUT", record);
+}
+
+function apiDelete(id) {
+  return apiRequest("DELETE", { id });
 }
 
 function populateSelect(selectEl, options, placeholder) {
@@ -144,7 +175,7 @@ async function onSubmit(e) {
     renderAll();
   } catch (err) {
     console.error(err);
-    setSyncStatus("Could not save — check your connection and try again.", true);
+    setSyncStatus(`Could not save — ${err.message}`, true);
   } finally {
     submitBtn.disabled = false;
   }
@@ -158,7 +189,7 @@ async function deleteVolunteer(id) {
     renderAll();
   } catch (err) {
     console.error(err);
-    setSyncStatus("Could not remove — check your connection and try again.", true);
+    setSyncStatus(`Could not remove — ${err.message}`, true);
   }
 }
 
@@ -293,9 +324,17 @@ function escapeHtml(s) {
 
 const CSV_FIELDS = ["id", "name", "phone", "role", "ward", "station_code", "station_name", "status", "notes", "updated_at"];
 
+// Guards against CSV/formula injection: a name or note starting with =, +, -,
+// @, tab, or CR would be interpreted as a formula by Excel/Sheets on open,
+// which can be abused to run commands or leak data. Prefixing with a single
+// quote defuses that while keeping the text otherwise readable.
+function csvFormulaGuard(s) {
+  return /^[=+\-@\t\r]/.test(s) ? `'${s}` : s;
+}
+
 function toCsv(rows) {
   const esc = (v) => {
-    const s = v === undefined || v === null ? "" : String(v);
+    const s = csvFormulaGuard(v === undefined || v === null ? "" : String(v));
     return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
   };
   const lines = [CSV_FIELDS.join(",")];
@@ -373,7 +412,7 @@ async function importCsv(file) {
     alert(`Imported ${imported.length} row(s). Roster now has ${volunteers.length} assignment(s).`);
   } catch (err) {
     console.error(err);
-    setSyncStatus("Import failed partway — check your connection and try again.", true);
+    setSyncStatus(`Import failed partway — ${err.message}`, true);
   }
 }
 
@@ -391,7 +430,7 @@ function setupTabs() {
 async function pollForUpdates() {
   if (editingId) return; // don't yank the roster out from under an in-progress edit
   try {
-    volunteers = await apiFetchAll();
+    volunteers = await apiFetchAll({ interactive: false });
     renderAll();
     setSyncStatus(`Synced ${new Date().toLocaleTimeString()}`);
   } catch (err) {
