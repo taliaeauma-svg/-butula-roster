@@ -60,6 +60,12 @@ function clampTimestamp(record) {
 }
 
 export default async (request) => {
+  // TEMPORARY diagnostic - reports only whether the key is configured, never
+  // its value. Remove once ROSTER_ACCESS_KEY enforcement is confirmed working.
+  if (request.headers.get("x-debug-check") === "1") {
+    return json({ configured: !!process.env.ROSTER_ACCESS_KEY, keyLength: (process.env.ROSTER_ACCESS_KEY || "").length });
+  }
+
   if (!checkAccess(request)) return json({ error: "Unauthorized" }, 401);
 
   const s = store();
